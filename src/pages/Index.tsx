@@ -112,18 +112,8 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: 'Елена Михайлова',
-      text: 'Восхитительная работа! Шторы преобразили весь интерьер. Качество тканей и исполнения на высшем уровне.',
-      rating: 5
-    },
-    {
-      name: 'Андрей Волков',
-      text: 'Профессиональный подход на всех этапах. От замера до установки - все прошло безупречно.',
-      rating: 5
-    },
-    {
-      name: 'Мария Петрова',
-      text: 'Дизайнер учла все мои пожелания и предложила решения, о которых я даже не думала. Результат превзошел ожидания!',
+      name: 'Светлана Качура',
+      text: 'Заказывала тюль и портьеры на три комнаты. Очень понравилась работа персонала, грамотно и профессионально подобрали текстиль, посоветовали, какие шторы подходят для нашего интерьера. Дизайнер Лиана хорошо знает свое дело, сумела убедить меня в таком подборе ткани и оказалась права! Шторы нам очень нравятся, мы до сих пор любуемся прекрасными портьерами! В подарок от салона нам сшили четыре подушки на диван и кровать. Приятный бонус! Салон рекомендую однозначно. Успехов всем сотрудникам и процветания!',
       rating: 5
     }
   ];
@@ -229,7 +219,7 @@ const Index = () => {
             <h2 className="text-5xl font-bold mb-4 text-primary">Отзывы клиентов</h2>
             <p className="text-lg text-muted-foreground">Что говорят о нашей работе</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-none shadow-md">
                 <CardHeader>
@@ -238,7 +228,7 @@ const Index = () => {
                       <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
                     ))}
                   </div>
-                  <CardDescription className="text-base italic">"{testimonial.text}"</CardDescription>
+                  <CardDescription className="text-base italic leading-relaxed">"{testimonial.text}"</CardDescription>
                   <CardTitle className="text-lg mt-4">— {testimonial.name}</CardTitle>
                 </CardHeader>
               </Card>
