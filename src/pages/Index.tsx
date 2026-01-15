@@ -270,8 +270,11 @@ const Index = () => {
             </div>
             <div>
               <Icon name="Phone" size={32} className="mx-auto mb-4 text-accent" />
-              <h3 className="font-semibold mb-2">Телефон</h3>
-              <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+              <h3 className="font-semibold mb-2">Телефоны</h3>
+              <p className="text-muted-foreground">
+                Офис: +7 (988) 505-35-91<br />
+                Дизайнер: +7 (988) 155-60-60
+              </p>
             </div>
             <div>
               <Icon name="Clock" size={32} className="mx-auto mb-4 text-accent" />
