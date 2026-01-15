@@ -49,7 +49,14 @@ const Index = () => {
     title: string;
     description: string;
     category: string;
-  }> = [];
+  }> = [
+    {
+      image: 'https://cdn.poehali.dev/files/Untitled.png',
+      title: 'Плиссе на нестандартные окна',
+      description: 'Энергоэффективные шторы с деликатными складками для арочных окон',
+      category: 'Плиссе'
+    }
+  ];
 
   const filteredPortfolio = activeCategory === 'Все' 
     ? portfolio 
