@@ -313,7 +313,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {filteredPortfolio.map((item, index) => (
               <Card key={index} className="overflow-hidden hover-lift border-none shadow-lg">
-                <div className="aspect-[3/4] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={item.image} 
                     alt={item.title}
