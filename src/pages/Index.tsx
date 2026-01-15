@@ -14,6 +14,7 @@ const Index = () => {
     phone: '',
     message: ''
   });
+  const [activeCategory, setActiveCategory] = useState('Все');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,23 +30,32 @@ const Index = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const portfolioCategories = ['Все', 'Шторы', 'Ламбрекены', 'Римские шторы', 'Текстиль'];
+
   const portfolio = [
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/c35dd7fc-12c0-47fc-9570-436f45733564.jpg',
       title: 'Шелковые шторы цвета шампань',
-      description: 'Минималистичная элегантность для современной гостиной'
+      description: 'Минималистичная элегантность для современной гостиной',
+      category: 'Шторы'
     },
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/014abfaf-7226-4d7c-98c8-25061e94d59c.jpg',
       title: 'Бархатные портьеры изумрудного оттенка',
-      description: 'Роскошная классика с золотыми акцентами'
+      description: 'Роскошная классика с золотыми акцентами',
+      category: 'Шторы'
     },
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/8583d681-ac1b-4b95-b77f-09a364a7b59d.jpg',
       title: 'Воздушные шторы с вышивкой',
-      description: 'Элегантная легкость для спальни'
+      description: 'Элегантная легкость для спальни',
+      category: 'Шторы'
     }
   ];
+
+  const filteredPortfolio = activeCategory === 'Все' 
+    ? portfolio 
+    : portfolio.filter(item => item.category === activeCategory);
 
   const services = [
     {
@@ -185,12 +195,27 @@ const Index = () => {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-5xl font-bold mb-4 text-primary">Наши работы</h2>
             <p className="text-lg text-muted-foreground">Портфолио реализованных проектов</p>
           </div>
+          
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {portfolioCategories.map((category) => (
+              <Button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                variant={activeCategory === category ? 'default' : 'outline'}
+                className={activeCategory === category ? 'bg-accent hover:bg-accent/90' : ''}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
-            {portfolio.map((item, index) => (
+            {filteredPortfolio.map((item, index) => (
               <Card key={index} className="overflow-hidden hover-lift border-none shadow-lg">
                 <div className="aspect-[3/4] overflow-hidden">
                   <img 
