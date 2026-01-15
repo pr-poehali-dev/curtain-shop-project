@@ -44,110 +44,12 @@ const Index = () => {
     'Электрокарнизы'
   ];
 
-  const portfolio = [
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/1ace2452-54e8-489d-92e5-f2a8ff69cb5c.jpg',
-      title: 'Элегантные шторы для спальни',
-      description: 'Нежные бежевые оттенки, шелковые ткани для уютной атмосферы',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/34e72d4a-e8b1-47ce-bd13-909db1eca4d7.jpg',
-      title: 'Шелковые портьеры для спальни',
-      description: 'Утренний свет сквозь роскошные бежевые драпировки',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/42667fd8-121b-47f4-9246-8173010be7f0.jpg',
-      title: 'Бархатные шторы с затемнением',
-      description: 'Глубокий синий цвет для идеального сна',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/4a235005-e8e8-4e4a-85c6-264de2e30dff.jpg',
-      title: 'Современные льняные шторы',
-      description: 'Минимализм и функциональность для спальни',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/files/IMG_4794.jpeg',
-      title: 'Двойные шторы с тюлем',
-      description: 'Сине-серые портьеры с белой вуалью для спальни',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/files/IMG_4805.jpeg',
-      title: 'Комплект штор на большое окно',
-      description: 'Элегантное сочетание затемнения и легкого тюля',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/files/IMG_4819.jpeg',
-      title: 'Спальня в синих тонах',
-      description: 'Полный комплект текстильного оформления с подушками',
-      category: 'Шторы для спальни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/acc6287b-f09f-461c-8d83-5c6e809cf7f1.jpg',
-      title: 'Изумрудный бархат для гостиной',
-      description: 'Роскошные портьеры с золотыми подхватами',
-      category: 'Шторы для гостиной'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/c35dd7fc-12c0-47fc-9570-436f45733564.jpg',
-      title: 'Классика для гостиной',
-      description: 'Шелковые шторы цвета шампань с элегантной драпировкой',
-      category: 'Шторы для гостиной'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/f546b52e-baaf-4e8d-8368-4f18db031a25.jpg',
-      title: 'Светлые шторы для кухни',
-      description: 'Практичные и стильные решения для кухонного пространства',
-      category: 'Шторы для кухни'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/66b494e8-7d7a-4998-8564-eed9b686c82f.jpg',
-      title: 'Уютные шторы для детской',
-      description: 'Мягкие пастельные тона с затемнением для комфортного сна',
-      category: 'Шторы для детской'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/d14bedef-9a85-4c78-95e4-ee39a45148b0.jpg',
-      title: 'Римские шторы',
-      description: 'Структурированные складки, минималистичный стиль',
-      category: 'Римские шторы'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/3e57cd7e-e50b-4675-9447-ef5f261b564e.jpg',
-      title: 'Рулонные шторы',
-      description: 'Современное решение для офисов и современных интерьеров',
-      category: 'Рулонные шторы'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/7defa14d-bee8-49e6-ac72-8c5d99d18eb4.jpg',
-      title: 'Деревянные жалюзи',
-      description: 'Натуральное дерево тёплого медового оттенка',
-      category: 'Деревянные жалюзи'
-    },
-    {
-      image: 'https://cdn.poehali.dev/files/Untitled.png',
-      title: 'Плиссе',
-      description: 'Энергоэффективные шторы с деликатными складками',
-      category: 'Плиссе'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/9c1e1e36-697f-4518-a7b4-b489284811ce.jpg',
-      title: 'Покрывала и декоративные подушки',
-      description: 'Премиум текстиль для спальни в едином стиле',
-      category: 'Покрывала и подушки'
-    },
-    {
-      image: 'https://cdn.poehali.dev/files/IMG_7587.jpeg',
-      title: 'Электрокарнизы',
-      description: 'Умное управление шторами с пульта и смартфона',
-      category: 'Электрокарнизы'
-    }
-  ];
+  const portfolio: Array<{
+    image: string;
+    title: string;
+    description: string;
+    category: string;
+  }> = [];
 
   const filteredPortfolio = activeCategory === 'Все' 
     ? portfolio 
