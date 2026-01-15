@@ -52,6 +52,24 @@ const Index = () => {
       category: 'Шторы для спальни'
     },
     {
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/34e72d4a-e8b1-47ce-bd13-909db1eca4d7.jpg',
+      title: 'Шелковые портьеры для спальни',
+      description: 'Утренний свет сквозь роскошные бежевые драпировки',
+      category: 'Шторы для спальни'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/42667fd8-121b-47f4-9246-8173010be7f0.jpg',
+      title: 'Бархатные шторы с затемнением',
+      description: 'Глубокий синий цвет для идеального сна',
+      category: 'Шторы для спальни'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/4a235005-e8e8-4e4a-85c6-264de2e30dff.jpg',
+      title: 'Современные льняные шторы',
+      description: 'Минимализм и функциональность для спальни',
+      category: 'Шторы для спальни'
+    },
+    {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/acc6287b-f09f-461c-8d83-5c6e809cf7f1.jpg',
       title: 'Изумрудный бархат для гостиной',
       description: 'Роскошные портьеры с золотыми подхватами',
