@@ -271,10 +271,30 @@ const Index = () => {
             <div>
               <Icon name="Phone" size={32} className="mx-auto mb-4 text-accent" />
               <h3 className="font-semibold mb-2">Телефоны</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-4">
                 Офис: <a href="tel:+79885053591" className="hover:text-accent transition-colors">+7 (988) 505-35-91</a><br />
                 Дизайнер: <a href="tel:+79881556060" className="hover:text-accent transition-colors">+7 (988) 155-60-60</a>
               </p>
+              <div className="flex gap-3 justify-center">
+                <a 
+                  href="https://wa.me/79885053591" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-lg hover:bg-[#20BA5A] transition-colors text-sm"
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  Офис
+                </a>
+                <a 
+                  href="https://wa.me/79881556060" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-lg hover:bg-[#20BA5A] transition-colors text-sm"
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  Дизайнер
+                </a>
+              </div>
             </div>
             <div>
               <Icon name="Clock" size={32} className="mx-auto mb-4 text-accent" />
