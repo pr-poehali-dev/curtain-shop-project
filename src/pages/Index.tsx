@@ -93,7 +93,7 @@ const Index = () => {
       category: 'Деревянные жалюзи'
     },
     {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/08494a17-8a5a-4ad3-85b5-84523505a798.jpg',
+      image: 'https://cdn.poehali.dev/files/Untitled.png',
       title: 'Плиссе',
       description: 'Энергоэффективные шторы с деликатными складками',
       category: 'Плиссе'
