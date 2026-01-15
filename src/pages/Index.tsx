@@ -70,6 +70,24 @@ const Index = () => {
       category: 'Шторы для спальни'
     },
     {
+      image: 'https://cdn.poehali.dev/files/IMG_4794.jpeg',
+      title: 'Двойные шторы с тюлем',
+      description: 'Сине-серые портьеры с белой вуалью для спальни',
+      category: 'Шторы для спальни'
+    },
+    {
+      image: 'https://cdn.poehali.dev/files/IMG_4805.jpeg',
+      title: 'Комплект штор на большое окно',
+      description: 'Элегантное сочетание затемнения и легкого тюля',
+      category: 'Шторы для спальни'
+    },
+    {
+      image: 'https://cdn.poehali.dev/files/IMG_4819.jpeg',
+      title: 'Спальня в синих тонах',
+      description: 'Полный комплект текстильного оформления с подушками',
+      category: 'Шторы для спальни'
+    },
+    {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/acc6287b-f09f-461c-8d83-5c6e809cf7f1.jpg',
       title: 'Изумрудный бархат для гостиной',
       description: 'Роскошные портьеры с золотыми подхватами',
