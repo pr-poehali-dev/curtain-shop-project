@@ -30,26 +30,37 @@ const Index = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const portfolioCategories = ['Все', 'Шторы', 'Ламбрекены', 'Римские шторы', 'Текстиль'];
+  const portfolioCategories = [
+    'Все', 
+    'Штора для спальни',
+    'Шторы для гостиной',
+    'Шторы для кухни',
+    'Шторы для детской',
+    'Римские шторы',
+    'Рулонные шторы',
+    'Деревянные жалюзи',
+    'Плиссе',
+    'Покрывала и подушки'
+  ];
 
   const portfolio = [
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/c35dd7fc-12c0-47fc-9570-436f45733564.jpg',
       title: 'Шелковые шторы цвета шампань',
       description: 'Минималистичная элегантность для современной гостиной',
-      category: 'Шторы'
+      category: 'Шторы для гостиной'
     },
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/014abfaf-7226-4d7c-98c8-25061e94d59c.jpg',
       title: 'Бархатные портьеры изумрудного оттенка',
       description: 'Роскошная классика с золотыми акцентами',
-      category: 'Шторы'
+      category: 'Шторы для гостиной'
     },
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/8583d681-ac1b-4b95-b77f-09a364a7b59d.jpg',
       title: 'Воздушные шторы с вышивкой',
       description: 'Элегантная легкость для спальни',
-      category: 'Шторы'
+      category: 'Штора для спальни'
     }
   ];
 
