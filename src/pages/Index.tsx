@@ -49,34 +49,69 @@ const Index = () => {
 
   const services = [
     {
-      icon: 'Sparkles',
-      title: 'Индивидуальный дизайн',
-      description: 'Создание уникального дизайна штор под ваш интерьер с учетом всех пожеланий'
-    },
-    {
-      icon: 'Ruler',
-      title: 'Замер и консультация',
-      description: 'Бесплатный выезд дизайнера для замера окон и профессиональной консультации'
+      icon: 'Home',
+      title: 'Полное текстильное оформление под ключ',
+      description: 'Комплексное решение для вашего интерьера от замера до монтажа'
     },
     {
       icon: 'Scissors',
-      title: 'Пошив на заказ',
-      description: 'Изготовление штор из премиальных тканей европейских производителей'
+      title: 'Пошив штор',
+      description: 'Индивидуальный пошив штор любой сложности из премиальных тканей'
     },
     {
-      icon: 'Home',
-      title: 'Монтаж и установка',
-      description: 'Профессиональная установка карнизов и развешивание штор'
+      icon: 'Ruler',
+      title: 'Выезд дизайнера на объект',
+      description: 'Профессиональный замер, консультация и подбор ткани на месте'
     },
     {
-      icon: 'Palette',
-      title: 'Подбор тканей',
-      description: 'Помощь в выборе из 500+ коллекций премиальных тканей'
+      icon: 'Crown',
+      title: 'Пошив ламбрекенов',
+      description: 'Элегантные ламбрекены для завершения образа интерьера'
     },
     {
-      icon: 'RefreshCw',
-      title: 'Послепродажный сервис',
-      description: 'Чистка, ремонт и уход за шторами в течение всего срока службы'
+      icon: 'Bed',
+      title: 'Пошив покрывал и наволочек',
+      description: 'Текстиль для спальни в едином стиле с шторами'
+    },
+    {
+      icon: 'Coffee',
+      title: 'Пошив скатертей',
+      description: 'Изысканные скатерти для праздничного и повседневного стола'
+    },
+    {
+      icon: 'Armchair',
+      title: 'Пошив чехлов на стулья',
+      description: 'Защитные и декоративные чехлы на любую мебель'
+    },
+    {
+      icon: 'LayoutGrid',
+      title: 'Римские и рулонные шторы',
+      description: 'Современные решения для функционального оформления окон'
+    },
+    {
+      icon: 'Wallpaper',
+      title: 'Обои под заказ',
+      description: 'Эксклюзивные обои для создания неповторимого интерьера'
+    },
+    {
+      icon: 'Blinds',
+      title: 'Жалюзи',
+      description: 'Вертикальные и горизонтальные жалюзи любых размеров'
+    },
+    {
+      icon: 'MoveHorizontal',
+      title: 'Карнизы',
+      description: 'Широкий выбор карнизов от классики до современных систем'
+    },
+    {
+      icon: 'Wrench',
+      title: 'Монтаж и демонтаж карнизов',
+      description: 'Профессиональная установка с гарантией качества'
+    },
+    {
+      icon: 'Package',
+      title: 'Развеска штор',
+      description: 'Аккуратная развеска с идеальной драпировкой'
     }
   ];
 
@@ -184,15 +219,15 @@ const Index = () => {
             <h2 className="text-5xl font-bold mb-4 text-primary">Услуги салона</h2>
             <p className="text-lg text-muted-foreground">Полный цикл работ от замера до установки</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="hover-lift border-none shadow-md">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                     <Icon name={service.icon} size={24} className="text-accent" />
                   </div>
-                  <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
+                  <CardTitle className="text-lg mb-2">{service.title}</CardTitle>
+                  <CardDescription className="text-sm">{service.description}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
