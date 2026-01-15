@@ -103,7 +103,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">ÉLÉGANCE</h1>
+          <h1 className="text-2xl font-bold text-primary">ШТОРЫ ТОП</h1>
           <div className="hidden md:flex gap-8">
             <button onClick={() => scrollToSection('hero')} className="text-sm hover:text-accent transition-colors">Главная</button>
             <button onClick={() => scrollToSection('portfolio')} className="text-sm hover:text-accent transition-colors">Портфолио</button>
@@ -285,14 +285,14 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-4 border-t bg-muted/20">
         <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4 text-primary">ÉLÉGANCE</h3>
+          <h3 className="text-2xl font-bold mb-4 text-primary">ШТОРЫ ТОП</h3>
           <p className="text-muted-foreground mb-6">Салон премиальных штор</p>
           <div className="flex justify-center gap-6">
             <Icon name="Instagram" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
             <Icon name="Facebook" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
             <Icon name="MessageCircle" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
           </div>
-          <p className="text-sm text-muted-foreground mt-8">© 2024 ÉLÉGANCE. Все права защищены.</p>
+          <p className="text-sm text-muted-foreground mt-8">© 2024 ШТОРЫ ТОП. Все права защищены.</p>
         </div>
       </footer>
     </div>
