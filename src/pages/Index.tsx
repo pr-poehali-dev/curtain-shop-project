@@ -207,7 +207,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/files/IMG_7638.png" alt="ШТОРЫ ТОП" className="h-12 w-12 object-contain" />
+            <img src="https://cdn.poehali.dev/files/IMG_7639.png" alt="ШТОРЫ ТОП" className="h-12 w-12 object-contain" />
             <h1 className="text-2xl font-bold text-primary">ШТОРЫ ТОП</h1>
           </div>
           <div className="hidden md:flex gap-8">
@@ -429,7 +429,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-4 border-t bg-muted/20">
         <div className="container mx-auto text-center">
-          <img src="https://cdn.poehali.dev/files/IMG_7638.png" alt="ШТОРЫ ТОП" className="h-20 w-20 object-contain mx-auto mb-4" />
+          <img src="https://cdn.poehali.dev/files/IMG_7639.png" alt="ШТОРЫ ТОП" className="h-20 w-20 object-contain mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-4 text-primary">ШТОРЫ ТОП</h3>
           <p className="text-muted-foreground mb-6">Салон премиальных штор</p>
           <div className="flex justify-center gap-6">
