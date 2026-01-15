@@ -32,7 +32,7 @@ const Index = () => {
 
   const portfolioCategories = [
     'Все', 
-    'Штора для спальни',
+    'Шторы для спальни',
     'Шторы для гостиной',
     'Шторы для кухни',
     'Шторы для детской',
@@ -48,7 +48,7 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/1ace2452-54e8-489d-92e5-f2a8ff69cb5c.jpg',
       title: 'Элегантные шторы для спальни',
       description: 'Нежные бежевые оттенки, шелковые ткани для уютной атмосферы',
-      category: 'Штора для спальни'
+      category: 'Шторы для спальни'
     },
     {
       image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/acc6287b-f09f-461c-8d83-5c6e809cf7f1.jpg',
