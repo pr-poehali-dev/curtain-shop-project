@@ -151,12 +151,7 @@ const Index = () => {
 
   const showingCategories = activeCategory === 'Все';
 
-  const services: Array<{
-    icon?: string;
-    image?: string;
-    title: string;
-    description: string;
-  }> = [
+  const services = [
     {
       icon: 'Home',
       title: 'Полное текстильное оформление под ключ',
@@ -189,13 +184,8 @@ const Index = () => {
     },
     {
       icon: 'LayoutGrid',
-      title: 'Рулонные шторы',
+      title: 'Римские и рулонные шторы',
       description: 'Современные решения для функционального оформления окон'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/files/71dc5541-7fa8-466c-9a6a-1785f30249f7.jpg',
-      title: 'Пошив римских штор',
-      description: 'Элегантные римские шторы с плавными складками для любого интерьера'
     },
     {
       icon: 'Blinds',
@@ -385,11 +375,7 @@ const Index = () => {
               <Card key={index} className="hover-lift border-none shadow-md">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                    {service.image ? (
-                      <img src={service.image} alt="" className="w-6 h-6 object-contain" />
-                    ) : (
-                      <Icon name={service.icon!} size={24} className="text-accent" />
-                    )}
+                    <Icon name={service.icon} size={24} className="text-accent" />
                   </div>
                   <CardTitle className="text-lg mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-sm">{service.description}</CardDescription>
