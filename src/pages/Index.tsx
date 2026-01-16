@@ -34,61 +34,51 @@ const Index = () => {
     category: string;
     image: string;
     title: string;
-    count: number;
   }> = [
     {
       category: 'Шторы для спальни',
       image: 'https://cdn.poehali.dev/files/IMG_7701.jpeg',
-      title: 'Шторы для спальни',
-      count: 1
+      title: 'Шторы для спальни'
     },
     {
       category: 'Шторы для гостиной',
       image: 'https://cdn.poehali.dev/files/IMG_7706.jpeg',
-      title: 'Шторы для гостиной',
-      count: 1
+      title: 'Шторы для гостиной'
     },
     {
       category: 'Шторы для кухни',
       image: 'https://cdn.poehali.dev/files/IMG_7704.jpeg',
-      title: 'Шторы для кухни',
-      count: 1
+      title: 'Шторы для кухни'
     },
     {
       category: 'Шторы для детской',
       image: 'https://cdn.poehali.dev/files/IMG_7699.jpeg',
-      title: 'Шторы для детской',
-      count: 1
+      title: 'Шторы для детской'
     },
     {
       category: 'Рулонные шторы',
       image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
-      title: 'Рулонные шторы',
-      count: 1
+      title: 'Рулонные шторы'
     },
     {
       category: 'Деревянные жалюзи',
       image: 'https://cdn.poehali.dev/files/IMG_7698.jpeg',
-      title: 'Деревянные жалюзи',
-      count: 1
+      title: 'Деревянные жалюзи'
     },
     {
       category: 'Плиссе',
       image: 'https://cdn.poehali.dev/files/Untitled.png',
-      title: 'Плиссе',
-      count: 1
+      title: 'Плиссе'
     },
     {
       category: 'Покрывала и подушки',
       image: 'https://cdn.poehali.dev/files/IMG_7703.jpeg',
-      title: 'Покрывала и подушки',
-      count: 1
+      title: 'Покрывала и подушки'
     },
     {
       category: 'Электрокарнизы',
       image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
-      title: 'Электрокарнизы',
-      count: 1
+      title: 'Электрокарнизы'
     }
   ];
 
@@ -339,8 +329,7 @@ const Index = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                       <div className="p-6 text-white w-full">
-                        <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                        <p className="text-sm opacity-90">{item.count} {item.count === 1 ? 'работа' : 'работы'}</p>
+                        <h3 className="text-2xl font-bold">{item.title}</h3>
                       </div>
                     </div>
                   </div>
