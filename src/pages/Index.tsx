@@ -569,7 +569,7 @@ const Index = () => {
           <h3 className="text-2xl font-bold mb-4 text-primary">ШТОРЫ ТОП</h3>
           <p className="text-muted-foreground mb-6">Салон премиальных штор</p>
           <div className="flex justify-center gap-6">
-            <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/shtoryTOPchiyan" target="_blank" rel="noopener noreferrer">
               <Icon name="Send" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
             </a>
             <a href="https://yandex.ru/navi/org/top_chiyan/1173230113?si=gjrp5bmg8weqv2tw2rb05aceag" target="_blank" rel="noopener noreferrer">
