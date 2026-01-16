@@ -571,9 +571,15 @@ const Index = () => {
           <h3 className="text-2xl font-bold mb-4 text-primary">ШТОРЫ ТОП</h3>
           <p className="text-muted-foreground mb-6">Салон премиальных штор</p>
           <div className="flex justify-center gap-6">
-            <Icon name="Instagram" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
-            <Icon name="Facebook" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
-            <Icon name="MessageCircle" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+            <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+              <Icon name="Send" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+            </a>
+            <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer">
+              <Icon name="MapPin" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+            </a>
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
+              <Icon name="MessageCircle" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+            </a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">© 2024 ШТОРЫ ТОП. Все права защищены.</p>
         </div>
