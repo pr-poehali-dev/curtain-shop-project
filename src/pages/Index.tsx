@@ -15,6 +15,7 @@ const Index = () => {
     message: ''
   });
   const [activeCategory, setActiveCategory] = useState('Все');
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -386,7 +387,8 @@ const Index = () => {
                       <img 
                         src={item.image} 
                         alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer"
+                        onClick={() => setLightboxImage(item.image!)}
                       />
                     )}
                   </div>
@@ -548,6 +550,27 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Lightbox */}
+      {lightboxImage && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors"
+            onClick={() => setLightboxImage(null)}
+          >
+            <Icon name="X" size={32} />
+          </button>
+          <img 
+            src={lightboxImage} 
+            alt="Просмотр фото"
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="py-12 px-4 border-t bg-muted/20">
