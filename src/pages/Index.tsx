@@ -312,9 +312,7 @@ const Index = () => {
             <br />
             для вашего дома
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Создаем уникальные текстильные решения премиум-класса
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Создаем уникальные текстильные решения премиум-класса с 2008 года</p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" onClick={() => scrollToSection('contact')} className="bg-accent hover:bg-accent/90">
               Записаться на консультацию
