@@ -79,6 +79,11 @@ const Index = () => {
       category: 'Электрокарнизы',
       image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
       title: 'Электрокарнизы'
+    },
+    {
+      category: 'Алюминиевые жалюзи',
+      image: 'https://cdn.poehali.dev/files/IMG_7697.jpeg',
+      title: 'Алюминиевые жалюзи'
     }
   ];
 
@@ -142,6 +147,12 @@ const Index = () => {
       title: 'Электрокарнизы с управлением',
       description: 'Современные электрокарнизы с управлением через пульт и смартфон для максимального комфорта',
       category: 'Электрокарнизы'
+    },
+    {
+      image: 'https://cdn.poehali.dev/files/IMG_7697.jpeg',
+      title: 'Алюминиевые жалюзи для современных интерьеров',
+      description: 'Стильные горизонтальные алюминиевые жалюзи белого цвета для гостиной и офиса',
+      category: 'Алюминиевые жалюзи'
     }
   ];
 
