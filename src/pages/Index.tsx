@@ -572,7 +572,7 @@ const Index = () => {
             <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
               <Icon name="Send" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
             </a>
-            <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer">
+            <a href="https://yandex.ru/navi/org/top_chiyan/1173230113?si=gjrp5bmg8weqv2tw2rb05aceag" target="_blank" rel="noopener noreferrer">
               <Icon name="MapPin" size={24} className="text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
             </a>
             <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
