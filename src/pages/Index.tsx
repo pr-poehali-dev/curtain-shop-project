@@ -544,7 +544,7 @@ const Index = () => {
       {/* Lightbox */}
       {lightboxImage && (
         <div 
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4 gap-6"
           onClick={() => setLightboxImage(null)}
         >
           <button
@@ -556,9 +556,19 @@ const Index = () => {
           <img 
             src={lightboxImage} 
             alt="Просмотр фото"
-            className="max-w-full max-h-full object-contain"
+            className="max-w-full max-h-[calc(100vh-120px)] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
+          <a
+            href="https://wa.me/79881556060"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#20BA5A] transition-colors text-base font-medium shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Icon name="MessageCircle" size={20} />
+            Рассчитать стоимость штор
+          </a>
         </div>
       )}
 
