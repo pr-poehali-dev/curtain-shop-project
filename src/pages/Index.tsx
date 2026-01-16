@@ -30,18 +30,66 @@ const Index = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const portfolioCategories = [
-    'Все', 
-    'Шторы для спальни',
-    'Шторы для гостиной',
-    'Шторы для кухни',
-    'Шторы для детской',
-    'Римские шторы',
-    'Рулонные шторы',
-    'Деревянные жалюзи',
-    'Плиссе',
-    'Покрывала и подушки',
-    'Электрокарнизы'
+  const categoryCovers: Array<{
+    category: string;
+    image: string;
+    title: string;
+    count: number;
+  }> = [
+    {
+      category: 'Шторы для спальни',
+      image: 'https://cdn.poehali.dev/files/IMG_7701.jpeg',
+      title: 'Шторы для спальни',
+      count: 1
+    },
+    {
+      category: 'Шторы для гостиной',
+      image: 'https://cdn.poehali.dev/files/IMG_7706.jpeg',
+      title: 'Шторы для гостиной',
+      count: 1
+    },
+    {
+      category: 'Шторы для кухни',
+      image: 'https://cdn.poehali.dev/files/IMG_7704.jpeg',
+      title: 'Шторы для кухни',
+      count: 1
+    },
+    {
+      category: 'Шторы для детской',
+      image: 'https://cdn.poehali.dev/files/IMG_7699.jpeg',
+      title: 'Шторы для детской',
+      count: 1
+    },
+    {
+      category: 'Рулонные шторы',
+      image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
+      title: 'Рулонные шторы',
+      count: 1
+    },
+    {
+      category: 'Деревянные жалюзи',
+      image: 'https://cdn.poehali.dev/files/IMG_7698.jpeg',
+      title: 'Деревянные жалюзи',
+      count: 1
+    },
+    {
+      category: 'Плиссе',
+      image: 'https://cdn.poehali.dev/files/Untitled.png',
+      title: 'Плиссе',
+      count: 1
+    },
+    {
+      category: 'Покрывала и подушки',
+      image: 'https://cdn.poehali.dev/files/IMG_7703.jpeg',
+      title: 'Покрывала и подушки',
+      count: 1
+    },
+    {
+      category: 'Электрокарнизы',
+      image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
+      title: 'Электрокарнизы',
+      count: 1
+    }
   ];
 
   const portfolio: Array<{
@@ -109,6 +157,8 @@ const Index = () => {
   const filteredPortfolio = activeCategory === 'Все' 
     ? portfolio 
     : portfolio.filter(item => item.category === activeCategory);
+
+  const showingCategories = activeCategory === 'Все';
 
   const services = [
     {
@@ -258,37 +308,64 @@ const Index = () => {
             <p className="text-lg text-muted-foreground">Портфолио реализованных проектов</p>
           </div>
           
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {portfolioCategories.map((category) => (
+          {/* Back Button */}
+          {activeCategory !== 'Все' && (
+            <div className="mb-8">
               <Button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                variant={activeCategory === category ? 'default' : 'outline'}
-                className={activeCategory === category ? 'bg-accent hover:bg-accent/90' : ''}
+                onClick={() => setActiveCategory('Все')}
+                variant="outline"
+                className="gap-2"
               >
-                {category}
+                <Icon name="ArrowLeft" size={18} />
+                Назад к категориям
               </Button>
-            ))}
-          </div>
+            </div>
+          )}
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {filteredPortfolio.map((item, index) => (
-              <Card key={index} className="overflow-hidden hover-lift border-none shadow-lg">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">{item.title}</CardTitle>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+          {/* Category Grid or Portfolio Grid */}
+          {showingCategories ? (
+            <div className="grid md:grid-cols-3 gap-8">
+              {categoryCovers.map((item, index) => (
+                <Card 
+                  key={index} 
+                  className="overflow-hidden hover-lift border-none shadow-lg cursor-pointer"
+                  onClick={() => setActiveCategory(item.category)}
+                >
+                  <div className="aspect-[4/3] overflow-hidden relative">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                      <div className="p-6 text-white w-full">
+                        <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                        <p className="text-sm opacity-90">{item.count} {item.count === 1 ? 'работа' : 'работы'}</p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-3 gap-8">
+              {filteredPortfolio.map((item, index) => (
+                <Card key={index} className="overflow-hidden hover-lift border-none shadow-lg">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle className="text-xl">{item.title}</CardTitle>
+                    <CardDescription>{item.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
