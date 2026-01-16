@@ -83,7 +83,8 @@ const Index = () => {
   ];
 
   const portfolio: Array<{
-    image: string;
+    image?: string;
+    video?: string;
     title: string;
     description: string;
     category: string;
@@ -340,12 +341,21 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {filteredPortfolio.map((item, index) => (
                 <Card key={index} className="overflow-hidden hover-lift border-none shadow-lg">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img 
-                      src={item.image} 
-                      alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                    />
+                  <div className="aspect-[4/3] overflow-hidden bg-black">
+                    {item.video ? (
+                      <video 
+                        src={item.video}
+                        className="w-full h-full object-cover"
+                        controls
+                        preload="metadata"
+                      />
+                    ) : (
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                      />
+                    )}
                   </div>
                   <CardHeader>
                     <CardTitle className="text-xl">{item.title}</CardTitle>
