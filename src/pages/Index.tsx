@@ -57,9 +57,9 @@ const Index = () => {
       title: 'Шторы для детской'
     },
     {
-      category: 'Рулонные шторы',
-      image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
-      title: 'Рулонные шторы'
+      category: 'Покрывала и подушки',
+      image: 'https://cdn.poehali.dev/files/IMG_7703.jpeg',
+      title: 'Покрывала и подушки'
     },
     {
       category: 'Деревянные жалюзи',
@@ -77,9 +77,9 @@ const Index = () => {
       title: 'Римские шторы'
     },
     {
-      category: 'Покрывала и подушки',
-      image: 'https://cdn.poehali.dev/files/IMG_7703.jpeg',
-      title: 'Покрывала и подушки'
+      category: 'Рулонные шторы',
+      image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
+      title: 'Рулонные шторы'
     },
     {
       category: 'Электрокарнизы',
