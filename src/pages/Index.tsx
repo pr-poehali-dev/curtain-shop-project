@@ -72,6 +72,11 @@ const Index = () => {
       title: 'Плиссе'
     },
     {
+      category: 'Римские шторы',
+      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
+      title: 'Римские шторы'
+    },
+    {
       category: 'Покрывала и подушки',
       image: 'https://cdn.poehali.dev/files/IMG_7703.jpeg',
       title: 'Покрывала и подушки'
@@ -189,6 +194,12 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/files/IMG_7709.jpeg',
       title: 'Римские шторы',
       description: 'Элегантные римские шторы с плавными складками для стильного и функционального оформления окон',
+      category: 'Римские шторы'
+    },
+    {
+      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
+      title: 'Стильные римские шторы для кухни',
+      description: 'Римские шторы с изящными полосами и декоративными помпонами для современной кухни-столовой',
       category: 'Римские шторы'
     }
   ];
@@ -323,9 +334,17 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center fade-in">
-          <h2 className="text-6xl md:text-7xl font-bold mb-6 text-primary">
+      <section id="hero" className="relative pt-32 pb-20 px-4 min-h-[70vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/files/Untitled.jpeg" 
+            alt="Hero background" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
+        </div>
+        <div className="container mx-auto text-center fade-in relative z-10">
+          <h2 className="text-6xl md:text-7xl font-bold mb-6 text-primary drop-shadow-lg">
             Изысканные шторы
             <br />
             для вашего дома
