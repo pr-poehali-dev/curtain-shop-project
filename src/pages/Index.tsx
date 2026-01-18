@@ -67,9 +67,9 @@ const Index = () => {
       title: 'Римские шторы'
     },
     {
-      category: 'Плиссе',
-      image: 'https://cdn.poehali.dev/files/Untitled.png',
-      title: 'Плиссе'
+      category: 'Рулонные шторы',
+      image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
+      title: 'Рулонные шторы'
     },
     {
       category: 'Деревянные жалюзи',
@@ -77,19 +77,19 @@ const Index = () => {
       title: 'Деревянные жалюзи'
     },
     {
-      category: 'Рулонные шторы',
-      image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
-      title: 'Рулонные шторы'
-    },
-    {
-      category: 'Электрокарнизы',
-      image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
-      title: 'Электрокарнизы'
+      category: 'Плиссе',
+      image: 'https://cdn.poehali.dev/files/Untitled.png',
+      title: 'Плиссе'
     },
     {
       category: 'Алюминиевые жалюзи',
       image: 'https://cdn.poehali.dev/files/IMG_7697.jpeg',
       title: 'Алюминиевые жалюзи'
+    },
+    {
+      category: 'Электрокарнизы',
+      image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
+      title: 'Электрокарнизы'
     }
   ];
 
