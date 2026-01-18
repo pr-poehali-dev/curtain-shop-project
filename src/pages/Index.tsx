@@ -62,11 +62,6 @@ const Index = () => {
       title: 'Покрывала и подушки'
     },
     {
-      category: 'Римские шторы',
-      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
-      title: 'Римские шторы'
-    },
-    {
       category: 'Рулонные шторы',
       image: 'https://cdn.poehali.dev/files/IMG_7695.jpeg',
       title: 'Рулонные шторы'
