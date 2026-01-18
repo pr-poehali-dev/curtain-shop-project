@@ -62,9 +62,9 @@ const Index = () => {
       title: 'Покрывала и подушки'
     },
     {
-      category: 'Деревянные жалюзи',
-      image: 'https://cdn.poehali.dev/files/IMG_7698.jpeg',
-      title: 'Деревянные жалюзи'
+      category: 'Римские шторы',
+      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
+      title: 'Римские шторы'
     },
     {
       category: 'Плиссе',
@@ -72,9 +72,9 @@ const Index = () => {
       title: 'Плиссе'
     },
     {
-      category: 'Римские шторы',
-      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
-      title: 'Римские шторы'
+      category: 'Деревянные жалюзи',
+      image: 'https://cdn.poehali.dev/files/IMG_7698.jpeg',
+      title: 'Деревянные жалюзи'
     },
     {
       category: 'Рулонные шторы',
