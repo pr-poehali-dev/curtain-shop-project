@@ -106,6 +106,12 @@ const Index = () => {
     category: string;
   }> = [
     {
+      image: 'https://cdn.poehali.dev/files/IMG_7880.jpeg',
+      title: 'Графитовые портьеры для элегантной спальни',
+      description: 'Двухслойные портьеры графитового цвета с белым тюлем и современными черными карнизами для стильной спальни',
+      category: 'Шторы для спальни'
+    },
+    {
       image: 'https://cdn.poehali.dev/files/Untitled.png',
       title: 'Плиссе на нестандартные окна',
       description: 'Энергоэффективные шторы с деликатными складками для арочных окон',
