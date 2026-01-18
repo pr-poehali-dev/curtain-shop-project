@@ -90,6 +90,11 @@ const Index = () => {
       category: 'Электрокарнизы',
       image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
       title: 'Электрокарнизы'
+    },
+    {
+      category: 'Карнизы',
+      image: 'https://cdn.poehali.dev/files/IMG_7873.jpeg',
+      title: 'Карнизы'
     }
   ];
 
@@ -201,6 +206,12 @@ const Index = () => {
       title: 'Стильные римские шторы для кухни',
       description: 'Римские шторы с изящными полосами и декоративными помпонами для современной кухни-столовой',
       category: 'Римские шторы'
+    },
+    {
+      image: 'https://cdn.poehali.dev/files/IMG_7873.jpeg',
+      title: 'Карнизы для штор',
+      description: 'Широкий выбор карнизов: от классических с декоративными наконечниками до современных профильных систем. Профессиональный монтаж.',
+      category: 'Карнизы'
     }
   ];
 
