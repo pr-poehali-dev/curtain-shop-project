@@ -375,12 +375,7 @@ const Index = () => {
       description: 'Стильные горизонтальные алюминиевые жалюзи белого цвета для гостиной и офиса',
       category: 'Алюминиевые жалюзи'
     },
-    {
-      image: 'https://cdn.poehali.dev/files/IMG_7709.jpeg',
-      title: 'Римские шторы',
-      description: 'Элегантные римские шторы с плавными складками для стильного и функционального оформления окон',
-      category: 'Римские шторы'
-    },
+
     {
       image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
       title: 'Стильные римские шторы для кухни',
