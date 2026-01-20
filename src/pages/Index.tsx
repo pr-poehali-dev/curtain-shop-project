@@ -63,7 +63,7 @@ const Index = () => {
     },
     {
       category: 'Римские шторы',
-      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/1dfa9d70-20c0-4b08-a912-6d58e5741b40.jpeg',
       title: 'Римские шторы'
     },
     {
@@ -332,6 +332,12 @@ const Index = () => {
       title: 'Элегантные портьеры цвета мокко для спальни',
       description: 'Роскошные портьеры шоколадного оттенка с белоснежным тюлем — создают уютную и спокойную атмосферу для отдыха',
       category: 'Шторы для детской'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/1dfa9d70-20c0-4b08-a912-6d58e5741b40.jpeg',
+      title: 'Льняные римские шторы светло-серого оттенка',
+      description: 'Практичные римские шторы из натуральной льняной ткани с горизонтальными складками — идеальное решение для минималистичных интерьеров',
+      category: 'Римские шторы'
     },
     {
       image: 'https://cdn.poehali.dev/files/IMG_7895.jpeg',
