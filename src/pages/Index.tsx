@@ -448,12 +448,7 @@ const Index = () => {
       category: 'Алюминиевые жалюзи'
     },
 
-    {
-      image: 'https://cdn.poehali.dev/files/Untitled.jpeg',
-      title: 'Стильные римские шторы для кухни',
-      description: 'Римские шторы с изящными полосами и декоративными помпонами для современной кухни-столовой',
-      category: 'Римские шторы'
-    },
+
     {
       image: 'https://cdn.poehali.dev/files/IMG_7873.jpeg',
       title: 'Карнизы для штор',
