@@ -105,7 +105,12 @@ const Index = () => {
     description: string;
     category: string;
   }> = [
-
+    {
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/967305ee-b948-4b2f-aae1-e90fe7fb3dff.png',
+      title: 'Плиссе на арочные окна с управлением',
+      description: 'Современные шторы плиссе белого цвета для арочных окон с удобным механизмом управления — идеальное решение для нестандартных оконных проемов',
+      category: 'Плиссе'
+    },
     {
       image: 'https://cdn.poehali.dev/files/IMG_7880.jpeg',
       title: 'Графитовые портьеры для элегантной спальни',
