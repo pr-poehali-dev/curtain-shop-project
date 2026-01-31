@@ -112,7 +112,7 @@ const Index = () => {
       category: 'Шторы для спальни'
     },
     {
-      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/61f04dbf-50d5-4d62-9643-4aef30120e57.png',
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/cd6077f3-edbf-4b4a-928a-ea320f2159e0.png',
       title: 'Плиссе на нестандартные окна',
       description: 'Энергоэффективные шторы с деликатными складками для арочных окон',
       category: 'Плиссе'
