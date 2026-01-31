@@ -81,7 +81,11 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/files/IMG_7697.jpeg',
       title: 'Алюминиевые жалюзи'
     },
-
+    {
+      category: 'Плиссе',
+      image: 'https://cdn.poehali.dev/projects/f78a0359-21c4-48a3-8585-ef8f2aa2b33c/bucket/4afd03e8-e839-41bb-9ea4-8c81f51f7588.png',
+      title: 'Плиссе'
+    },
     {
       category: 'Электрокарнизы',
       image: 'https://cdn.poehali.dev/files/IMG_7707.jpeg',
