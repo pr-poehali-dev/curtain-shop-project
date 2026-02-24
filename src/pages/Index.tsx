@@ -882,7 +882,9 @@ const Index = () => {
             <div>
               <Icon name="MapPin" size={32} className="mx-auto mb-4 text-accent" />
               <h3 className="font-semibold mb-2">Адрес</h3>
-              <p className="text-muted-foreground">г. Сочи, Демократическая 50/7А<br />вход со стороны остановки, 2-й этаж</p>
+              <p className="text-muted-foreground">Сочи, Демократическая 50/7А
+Вход с остановки 
+2 этаж</p>
             </div>
             <div>
               <Icon name="Phone" size={32} className="mx-auto mb-4 text-accent" />
